@@ -9,7 +9,9 @@ import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_700Bold } from
 export default function Home() {
   const [fontsLoaded] = useFonts({ Poppins_400Regular, Poppins_500Medium, Poppins_700Bold })
 
-  if(!fontsLoaded) <AppLoading/>
+  if (!fontsLoaded) {
+    return <AppLoading />
+  }
 
   return (
     <ThemeProvider theme={theme}>
