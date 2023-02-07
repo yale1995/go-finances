@@ -59,6 +59,6 @@ font-family: ${({ theme }) => theme.fonts.bold};
 
 
 export const Icon = styled(Feather)`
-color: ${({theme}) => theme.colors.shape};
+color: ${({theme}) => theme.colors.attencion};
 font-size: ${RFValue(24)}px;
 `
